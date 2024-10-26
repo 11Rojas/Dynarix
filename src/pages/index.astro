@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import Header from "../components/Header";
+import Footer from "../components/Footer.astro";
+import Roadmap from "../components/Roadmap.astro";
+import Tokenomics from "../components/Tokenomics.astro";
+import '../styles/global.css'
+
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dynarix</title>
+	</head>
+	<body class="relative">
+		<Image
+			src="/hero.jpg"
+			alt="hero-background"
+			loading={"eager"}
+			class="h-screen w-full brightness-50 absolute z-0"
+			height={100}
+			width={100}
+		/>
+		<div class="flex flex-col items-center justify-center h-screen relative z-10 text-center text-white space-y-6">
+			<h1 class="text-6xl font-extrabold text-[#3FA9F5] uppercase">Dynarix</h1>
+			<h2 class="text-2xl uppercase">The newest web3 gaming platform</h2>
+			<button class="px-4 py-2 bg-secundary rounded-xl text-white font-bold hover:bg-[#78aa37] uppercase">
+				Join Us
+			</button>
+		</div>
+		<Header client:load />
+		<Roadmap />
+		<Tokenomics  client:load/>
+		<Footer />
+	</body>
+</html>
