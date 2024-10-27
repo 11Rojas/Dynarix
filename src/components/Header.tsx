@@ -7,7 +7,7 @@ const Header: React.FC = () => {
                 <div className="flex items-center justify-center gap-2">
                     <img
                         src="/favicon.svg"
-                        alt="logo"
+                        alt="logo1"
                         loading="eager"
                         className="size-10"
                     />
