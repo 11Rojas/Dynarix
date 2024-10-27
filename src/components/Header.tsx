@@ -1,8 +1,4 @@
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "./ui/dropdown-menu";
-import twitterIcon from "public/twitter.svg";
-import discordIcon from "public/discord.svg";
-import telegramIcon from "public/telegram.svg";
-
 
 const Header: React.FC = () => {
     return (
@@ -20,7 +16,7 @@ const Header: React.FC = () => {
                 <nav className="hidden md:flex">
                     <ul className="flex flex-row text-secundary gap-20 uppercase font-extrabold">
                         <a href="#Roadmap">Roadmap</a>
-                        <a href="#Tokenomics">Tokemics</a>
+                        <a href="#Tokenomics">Tokenomics</a>
                         <a href="#">Whitepaper</a>
                     </ul>
                 </nav>
@@ -43,21 +39,24 @@ const Header: React.FC = () => {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-black text-white border-[#222121]">
                         <DropdownMenuItem>
-                        <img src={twitterIcon.src} className="size-4" loading="eager"  alt="x" /> 
-                        X</DropdownMenuItem>
+                            <img src="/twitter.svg" className="size-4" loading="eager" alt="Twitter icon" />
+                            X
+                        </DropdownMenuItem>
                         <DropdownMenuItem>
-                        <img src={discordIcon.src} className="size-4" loading="eager"  alt="discordIcon" /> 
-                            Discord</DropdownMenuItem>
+                            <img src="/discord.svg" className="size-4" loading="eager" alt="Discord icon" />
+                            Discord
+                        </DropdownMenuItem>
                         <DropdownMenuItem>
-                            <img src={telegramIcon.src} className="size-4" loading="eager"  alt="telegramIcon" /> Telegram
-                            </DropdownMenuItem>
+                            <img src="/telegram.svg" className="size-4" loading="eager" alt="Telegram icon" />
+                            Telegram
+                        </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
-
             <div className="w-3/4 h-[0.5px] bg-secundary/80 mx-auto mt-1"></div>
         </header>
     );
 };
 
 export default Header;
+
