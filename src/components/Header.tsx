@@ -38,18 +38,24 @@ const Header: React.FC = () => {
                         </svg>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-black text-white border-[#222121]">
+                          <a href="https://x.com/dynarix_">
                         <DropdownMenuItem>
                             <img src="/twitter.svg" className="size-4" loading="eager" alt="Twitter icon" />
                             X
                         </DropdownMenuItem>
+                              </a>
+                         <a href="https://discord.gg/eJPHJGTqkq">
                         <DropdownMenuItem>
                             <img src="/discord.svg" className="size-4" loading="eager" alt="Discord icon" />
                             Discord
                         </DropdownMenuItem>
+                             </a>
+                           <a href="https://t.me/+5PQriq4HMRU2ZGQx">
                         <DropdownMenuItem>
                             <img src="/telegram.svg" className="size-4" loading="eager" alt="Telegram icon" />
                             Telegram
                         </DropdownMenuItem>
+                               </a>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
