@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
+    "jsx": "preserve",
+    "moduleResolution": "Node",
     "strict": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/components/*": ["src/components/*"],
+      "@/utils/*": ["src/utils/*"]
     }
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
