@@ -1,4 +1,4 @@
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "./ui/dropdown-menu";
 import twitterIcon from "public/twitter.svg";
 import discordIcon from "public/discord.svg";
 import telegramIcon from "public/telegram.svg";
