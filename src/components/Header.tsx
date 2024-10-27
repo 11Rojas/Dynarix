@@ -17,7 +17,7 @@ const Header: React.FC = () => {
                     <ul className="flex flex-row text-secundary gap-20 uppercase font-extrabold">
                         <a href="#Roadmap">Roadmap</a>
                         <a href="#Tokenomics">Tokenomics</a>
-                        <a href="#">Whitepaper</a>
+                        <a href="https://dynarix.gitbook.io/dynarix" target="_blank" >Whitepaper</a>
                     </ul>
                 </nav>
                 <DropdownMenu>
