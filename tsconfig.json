@@ -10,10 +10,10 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
 "paths": {
-  "@/components/*": ["components/*"],  // Maps '@/components' to src/components
-  "@/lib/*": ["lib/*"],                 // Maps '@/lib' to src/lib
-  "@/utils/*": ["utils/*"],             // Maps '@/utils' to src/utils
-  "@/*": ["*"]                          // Maps '@' to src
+  "@/components/*": ["components/*"], // Maps '@/components' to src/components
+  "@/lib/*": ["lib/*"],               // Maps '@/lib' to src/lib
+  "@/utils/*": ["utils/*"],           // Maps '@/utils' to src/utils
+  "@/*": ["*"]                        // Maps '@' to src
 }
 
   },
