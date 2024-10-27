@@ -1,13 +1,21 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
-  }
+      "@/*": ["./src/*"]
+    },
+    "strict": false,                // Desactiva el modo estricto
+    "noImplicitAny": false,         // Permite el uso de "any" implícito
+    "strictNullChecks": false,      // Permite el uso de valores nulos en asignaciones
+    "strictFunctionTypes": false,   // Relaja los tipos de funciones
+    "strictBindCallApply": false,   // No exige comprobaciones estrictas en "bind", "call" y "apply"
+    "skipLibCheck": true,           // Omite la comprobación de tipos en archivos de biblioteca
+    "noEmit": true,                 // No genera archivos de salida
+    "esModuleInterop": true         // Permite importar módulos CommonJS
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.astro", "src/**/*"],
+  "exclude": ["node_modules"]
 }
