@@ -5,13 +5,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "./ui/card";
 import {
   ChartContainer,
   ChartLegend,
   ChartLegendContent,
-} from "@/components/ui/chart";
-import type { ChartConfig } from "@/components/ui/chart";
+} from "./ui/chart";
+import type { ChartConfig } from "./ui/chart";
 
 export const description = "A pie chart with a legend";
 
