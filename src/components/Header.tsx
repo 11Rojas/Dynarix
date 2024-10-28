@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                         loading="eager"
                         className="size-10"
                     />
-                    <h4 className="text-[#3FA9F5] font-extrabold uppercase text-xl">Dinaryx</h4>
+                    <h4 className="text-[#3FA9F5] font-extrabold uppercase text-xl">Dynarix</h4>
                 </div>
                 <nav className="hidden md:flex">
                     <ul className="flex flex-row text-secundary gap-20 uppercase font-extrabold">
